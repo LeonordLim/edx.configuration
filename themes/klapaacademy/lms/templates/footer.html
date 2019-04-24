@@ -9,6 +9,13 @@
 <% footer = get_footer(is_secure=is_secure) %>
 <%namespace name='static' file='static_content.html'/>
 
+## mcdaniel apr-2019: reduce footer height
+<style>
+  .wrapper-footer {
+    padding: 5px 10px 5px 10px;
+  }
+</style>
+
 % if uses_bootstrap:
   <div class="container-fluid wrapper-footer">
     <footer>
