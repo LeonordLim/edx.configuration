@@ -38,8 +38,8 @@ sudo cp -R /home/ubuntu/edx.configuration/themes/klapaacademy /edx/app/edxapp/ed
 sudo chown -R edxapp /edx/app/edxapp/edx-platform/themes/
 sudo chgrp -R edxapp /edx/app/edxapp/edx-platform/themes/
 
-echo 5. django configuration files
-sudo cp -R /home/ubuntu/edx.configuration/edx/app/edxapp/edx-platform/lms/envs/*.* /edx/app/edxapp/edx-platform/lms/envs/
+#echo 5. django configuration files
+#sudo cp -R /home/ubuntu/edx.configuration/edx/app/edxapp/edx-platform/lms/envs/*.* /edx/app/edxapp/edx-platform/lms/envs/
 
 #echo 6. admin scripts
 #sudo cp -R /home/ubuntu/edx.configuration/home/ubuntu/* /home/ubuntu/
