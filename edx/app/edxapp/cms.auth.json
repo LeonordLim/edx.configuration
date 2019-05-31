@@ -1,5 +1,8 @@
 
 {
+  "EMAIL_HOST_PASSWORD": "$123alanWalker",
+  "EMAIL_HOST_USER": "Regis.klapaacademy@gmail.com",
+
     "AWS_ACCESS_KEY_ID": null,
     "AWS_QUERYSTRING_AUTH": false,
     "AWS_S3_CUSTOM_DOMAIN": "SET-ME-PLEASE (ex. bucket-name.s3.amazonaws.com)",
@@ -87,8 +90,6 @@
         "user": "edxapp"
     },
     "ECOMMERCE_API_SIGNING_KEY": "SET-ME-PLEASE",
-    "EMAIL_HOST_PASSWORD": "$123alanWalker",
-    "EMAIL_HOST_USER": "Regis.klapaacademy@gmail.com",
     "ENTERPRISE_REPORTING_SECRET": "0000000000000000",
     "ENTERPRISE_SERVICE_WORKER_USERNAME": "enterprise_worker",
     "EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST": [],
