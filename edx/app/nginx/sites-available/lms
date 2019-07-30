@@ -9,7 +9,7 @@ upstream lms-backend {
 
 server {
   # LMS configuration file for nginx, templated by ansible
-  server_name klapaacademy.com
+  server_name courses.klapaacademy.com
   
   # error pages
   error_page 504 /server/server-error.html;
@@ -95,7 +95,10 @@ server_tokens off;
     proxy_pass http://lms-backend;
 
       }
-
+  location = / {  
+    return 301 http://klapaacademy.com;
+   }
+ 
   location / {
     
     try_files $uri @proxy_to_lms_app;
@@ -280,12 +283,12 @@ location ~ ^/media/(?P<file>.*) {
 
 
 server {
-    if ($host = klapaacademy.com) {
-        return 301 https://$host$request_uri;
+    if ($host = courses.klapaacademy.com) {
+        return 301 https://courses.klapaacademy.com$request_uri;
     } # managed by Certbot
 
 
-  server_name klapaacademy.com
+  server_name courses.klapaacademy.com
   
   # error pages
   error_page 504 /server/server-error.html;
